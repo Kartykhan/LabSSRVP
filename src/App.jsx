@@ -1,38 +1,40 @@
 import React from 'react';
 import Header from './components/Header/header';
 import Footer from './components/Footer/footer';
-import Container from './components/Container/container';
-import Menu from './components/Menu';
-import Button from './components/butt1';
 import Content from './components/Content/content';
+import Menu from './components/Menu/menu';
+import Button from './components/butt1';
 import "./App.css"
-
+import { BrowserRouter } from "react-router-dom";
 
 
 function App() {
   
+const handleClick = () => {
+  console.log("ГОЙДА");
+};
 
-  const handleClick = () => {
-    console.log("ГОЙДА");
-  };
+
 
   return (
-    <div>
+    <BrowserRouter>
       
-      <Header>
-      </Header>
+      <Header/>
       
-      <Container>
-      
-      <Button label="Кнопочка" onClick={handleClick} />
-      <h2>Hello World</h2>
-      </Container>
+      {/* <Container>
+        <div>
+          <Button label="Кнопочка" onClick={handleClick} />
+          <h2>Hello World</h2>
+        </div>
+      </Container> */}
+
+      <Menu />
+      <Content />
 
       
       
-      <Footer>
-      </Footer>
-    </div>
+      <Footer/>
+    </BrowserRouter>
   );
 }
 

@@ -1,13 +1,12 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography } from '@mui/material';
+import "./header.css"
 
 const Header = () => {
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <Typography variant="h5">Материалы по лабораторным работам</Typography>
-      </Toolbar>
-    </AppBar>
+    <div className='header1'>
+      <h2>Материалы лабораторных работ</h2>
+    </div>
+      
   );
 };
 

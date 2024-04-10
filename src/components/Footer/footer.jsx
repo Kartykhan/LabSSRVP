@@ -1,13 +1,13 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography } from '@mui/material';
+import "./footer.css"
 
 const Footer = () => {
   return (
-    <AppBar position="static" color="primary">
-      <Toolbar>
-        <Typography variant="body1">Лукин В. А.</Typography>
-      </Toolbar>
-    </AppBar>
+    <div className='footer1'>
+      <p>Made by Valera in Barnaul | 2024</p>
+    </div>
+    
+    
   );
 };
 

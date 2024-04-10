@@ -12,10 +12,16 @@
   justify-content: center
 }
 
-.footer{
+.header {
+  width: 100%;
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
+  
+}
+
+.footer{
+  bottom: 0; /* Закрепляем футер внизу страницы */
   width: 100%;
 }
 

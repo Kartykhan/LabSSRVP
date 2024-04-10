@@ -1,0 +1,22 @@
+/* .cont {
+  
+  width: 1000px;
+  margin-left: 270px;
+  padding: 20px;
+  background-color: #b3b3b3;
+  height: 700px;
+} */
+
+.content {
+  display: none;
+  
+}
+
+.active {
+  display: block;
+}
+
+.lab1{
+  width: 600px;
+  height: 500px;
+}
