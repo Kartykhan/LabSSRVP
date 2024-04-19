@@ -3,6 +3,11 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  --background-color-light: #fff; /* Задний фон для светлой темы */
+  --text-color-light: #000; /* Цвет текста для светлой темы */
+
+  --background-color-dark: #333; /* Задний фон для темной темы */
+  --text-color-dark: #fff; /* Цвет текста для темной темы */
 }
 
 .container{
@@ -21,12 +26,33 @@
 }
 
 .footer{
-  bottom: 0; /* Закрепляем футер внизу страницы */
+  bottom: 0;
   width: 100%;
 }
 
 .App{
   min-height: 100vh;
+}
+
+body {
+  background-color: var(--background-color-light); /* Используем CSS переменную для фона */
+  color: var(--text-color-light); /* Используем CSS переменную для цвета текста */
+}
+
+/* Стили для контейнеров */
+/* .container {
+  min-width: 1835px;
+  min-height: 950px;
+  text-align: center;
+} */
+
+.container-light {
+  background: var(--background-color-light); /* Используем CSS переменную для фона */
+}
+
+.container-dark {
+  background: var(--background-color-dark); /* Используем CSS переменную для фона */
+  color: var(--text-color-dark); /* Используем CSS переменную для цвета текста */
 }
 
 /* @keyframes logo-spin {
