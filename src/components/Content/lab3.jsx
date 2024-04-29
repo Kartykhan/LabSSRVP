@@ -1,5 +1,4 @@
 import React from "react";
-import './c.css';
 
 
 const Lab3 = () => {

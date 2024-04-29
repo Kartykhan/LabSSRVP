@@ -10,29 +10,32 @@
   --text-color-dark: #fff; /* Цвет текста для темной темы */
 }
 
-.container{
+/* .container{
   height: 10em;
   display: flex;
   align-items: center;
-  justify-content: center
-}
+  justify-content: left;
+  min-width: 1600px;
+  min-height: 150px;
+  left: 10%;
+} */
 
-.header {
+/* .header {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   
-}
+} */
 
 .footer{
   bottom: 0;
   width: 100%;
 }
 
-.App{
+/* .App{
   min-height: 100vh;
-}
+} */
 
 body {
   background-color: var(--background-color-light); /* Используем CSS переменную для фона */

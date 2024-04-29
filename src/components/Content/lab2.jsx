@@ -1,5 +1,4 @@
 import React from "react";
-import './c.css';
 import Container from '../Container/container'
 import Button from "../butt1";
 

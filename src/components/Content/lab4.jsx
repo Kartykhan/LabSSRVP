@@ -1,19 +1,15 @@
 import React, { useContext } from "react";
-import './c.css';
-// import { ThemeContext } from '../Theme/ThemeContext';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from './redux/actions';
+import ThemeToggle from "../Theme/ToggleTheme";
 
 const Lab4 = () => {
-    // const { theme, toggleTheme } = useContext(ThemeContext);
     const count = useSelector(state => state.count);
     const dispatch = useDispatch();
 
     return (
         <div>
-        {/* // <div className={`container-${theme}`}>
-        //     <h2>Тут кнопочка смены темы(работает отвратительно, пофиксить)</h2>
-        //     <button onClick={toggleTheme}>Поменять тему</button> */}
+            <ThemeToggle />
 
             <div>
                 <h2>Счет: {count}</h2>
